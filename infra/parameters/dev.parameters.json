@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+      "environmentType": {
+          "value": "dev"
+      },
+      "location": {
+          "value": "westeurope"
+      },
+      "appServicePlanName": {
+          "value": "zalsaheb-asp-dev"
+      },
+      "appServiceAppName": {
+          "value": "zalsaheb-be-dev"
+      },
+      "keyVaultName": {
+          "value": "zalsaheb-kv-dev"
+      },
+      "containerRegistryName": {
+          "value": "zalsahebacrdev"
+      },
+      "ServicePrincipalId": {
+          "value": "25d8d697-c4a2-479f-96e0-15593a830ae5"
+      }
+  }
+}
