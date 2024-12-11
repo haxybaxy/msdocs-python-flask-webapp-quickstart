@@ -86,4 +86,4 @@ jobs:
       with:
         app-name: ${{ env.BACKEND_WEBAPP_DEV }}
         images: ${{ env.ACR_NAME_DEV }}.azurecr.io/${{ env.IMAGE_NAME }}-dev:latest
-        startup-command: gunicorn app:app
+        startup-command: gunicorn --bind 0.0.0.0:8000 app:app
