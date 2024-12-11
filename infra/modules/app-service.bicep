@@ -59,6 +59,10 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
           name: 'WEBSITES_ENABLE_APP_SERVICE_STORAGE'
           value: 'false'
         }
+        {
+          name: 'WEBSITES_PORT'
+          value: '8000'
+        }
       ]
     }
   }
